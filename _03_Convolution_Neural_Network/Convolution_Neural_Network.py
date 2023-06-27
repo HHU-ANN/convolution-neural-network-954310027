@@ -160,6 +160,6 @@ def main():
     model = resnet50()
     current_dir = os.path.dirname(os.path.abspath(__file__))
     parent_dir = os.path.dirname(current_dir)
-    model.load_state_dict(torch.load(parent_dir + '/pth/best_model.pth', map_location='cpu'))
+    model.load_state_dict(torch.load(parent_dir + '/pth/1.pth', map_location='cpu'))
     return model
     
